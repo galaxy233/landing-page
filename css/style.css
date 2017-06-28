@@ -14,6 +14,10 @@ br {
   line-height: 1px;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
 /* modules */
 
 .background-purple {
@@ -29,11 +33,11 @@ br {
 }
 
 .background-blue {
-  background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+  background: linear-gradient(to bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
 }
 
 .background-red {
-  background: linear-gradient(to bottom, #ff1a00 0%,#ffa79e 100%);
+  background: linear-gradient(to bottom, #ff1a00 0%, #ffa79e 100%);
 }
 
 .purple {
@@ -46,6 +50,14 @@ br {
 
 .blue {
   color: #33ccff;
+}
+
+.red {
+  color: #ff6666;
+}
+
+.no-display {
+  height: 0px !important;
 }
 
 button {
@@ -61,6 +73,11 @@ button {
   background-color: white;
   margin: 5px;
 }
+
+.heading {
+  margin-top: 50px;
+}
+
 
 /* intro section */
 
@@ -84,6 +101,7 @@ nav div {
   justify-content: space-between;
   align-items: center;
 }
+
 .intro {
   position: relative;
   height: 650px;
@@ -98,7 +116,6 @@ nav div {
   z-index: 2;
   left: 50%;
   margin-left: -325px;
-
 }
 
 .intro-arrow-left {
@@ -127,7 +144,8 @@ nav div {
   height: 150px;
   position: absolute;
   right: 0;
-  bottom: 250px;;
+  bottom: 250px;
+  ;
   margin: 10px;
 }
 
@@ -138,7 +156,6 @@ nav div {
   top: 0;
   left: 0;
 }
-
 
 
 /* feature section */
@@ -159,8 +176,8 @@ nav div {
   height: 100px;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 50px #33ccff;
-  top:-20px;
-  left:-20px;
+  top: -20px;
+  left: -20px;
 }
 
 .red-ring {
@@ -169,8 +186,8 @@ nav div {
   height: 100px;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 50px #ff8566;
-  bottom:-20px;
-  right:-20px;
+  bottom: -20px;
+  right: -20px;
 }
 
 .feature-box {
@@ -178,19 +195,20 @@ nav div {
   width: 100%;
   height: 150px;
   margin: 10px;
-  box-shadow: 4px 4px 30px -10px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 30px -10px rgba(0, 0, 0, 0.75);
 }
 
 .feature button {
   margin-top: 50px;
 }
 
+
 /* testimonials section */
 
 .testimonials {
   position: relative;
   padding-top: 50px;
-  height: 600px;
+  height: 650px;
 }
 
 .box-3 {
@@ -198,7 +216,8 @@ nav div {
   height: 80px;
   position: absolute;
   right: 0;
-  bottom: 50px;;
+  bottom: 50px;
+  ;
   margin: 10px;
 }
 
@@ -225,7 +244,7 @@ nav div {
   width: 2000px;
   height: 250px;
   margin-top: 50px;
-  box-shadow: 0px 20px 0px -10px rgba(0,0,0,1);
+  box-shadow: 0px 20px 0px -10px rgba(0, 0, 0, 1);
   overflow: visible;
 }
 
@@ -262,12 +281,180 @@ nav div {
   font-size: 16px;
 }
 
-.shadow {
+.slider {
+  margin-bottom: 100px;
+}
+
+.discover-1 {
+  position: relative;
+}
+
+.discover-1-image {
+  background-image: url("../images/mobile.jpg");
+  background-size: cover;
   position: absolute;
-  width: 95%;
-  height: 10px;
-  background-color: red;
-  bottom: -10px;
-  margin:auto;
-  z-index: 20;
+  right: 0;
+  width: 50%;
+  height: 400px;
+  margin-top: 150px;
+  box-shadow: 3px 22px 200px 5px rgba(199, 199, 199, 1);
+}
+
+.discover-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.purple-box {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  height: 40px;
+  width: 90%;
+}
+
+.blue-quote {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #33ccff;
+  height: 75px;
+  width: 75px;
+  border-radius: 37px;
+  position: absolute;
+}
+
+.blue-quote-1 {
+  left: -45px;
+  top: 170px;
+}
+
+.discover-text {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.discover-1-text {
+  margin-top: 80px;
+}
+
+.discover-text h4 h5 {
+  font-size: 24px;
+}
+
+.discover-2 {
+  position: relative;
+  margin-top: 200px;
+}
+
+.discover-arrow-right {
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+.discover-arrow-left {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+}
+
+.discover-2 img {
+  width: 100%;
+}
+
+.discover-2-text {
+  margin-top: 50px;
+}
+
+.discover-end {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*signup*/
+
+.signup {
+  color: white;
+  position: relative;
+  padding-top: 100px;
+  height: 650px;
+}
+
+.chevron-tri-2 {
+  color: #cccccc;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+.chevron-tri-2 i:last-child {
+  margin-left: -23px;
+}
+
+.user-count {
+  margin-right: 100px;
+}
+
+.user-count-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 56px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 29%;
+  float: left;
+  height: 150px;
+}
+
+.signup-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  margin-top: 75px;
+}
+
+.signup-input {
+  margin-bottom: 75px;
+}
+
+.signup-input input {
+  width: 300px;
+  border-radius: 0px;
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+
+footer {
+  height: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer>div {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+footer>div>div {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
 }
