@@ -399,11 +399,12 @@ nav div {
 }
 
 .user-count-section {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 56px;
-  margin: 5px;
+  margin: 0px;
   background: rgba(255, 255, 255, 0.2);
   width: 29%;
   float: left;
